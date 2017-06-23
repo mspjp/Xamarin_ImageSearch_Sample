@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin_BingImageSearch_Sample"
+             x:Class="Xamarin_BingImageSearch_Sample.MainPage">
+
+    <StackLayout>
+        <Label Text="Subscription Key"/>
+        <Entry x:Name="BingKey"/>
+        <Label Text="SearchText"/>
+        <Entry x:Name="SearchText" />
+        <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked"/>
+        <ListView x:Name="ListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Image Source="{Binding ImageURL}" WidthRequest="200" HeightRequest="200"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
