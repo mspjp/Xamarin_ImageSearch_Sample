@@ -15,7 +15,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Image Source="{Binding ImageURL}" WidthRequest="200" HeightRequest="200"/>
+                            <Image Source="{Binding ImageURL}" WidthRequest="500" HeightRequest="500"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
